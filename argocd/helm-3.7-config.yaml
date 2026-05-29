@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-repo-server
+  namespace: argocd
+spec:
+  template:
+    spec:
+      initContainers:
+        - name: download-helm-3-7
+          image: alpine:3.18
+          command: ["sh", "-c"]
+          args:
+            - |
+              wget -q https://get.helm.sh/helm-v3.7.0-linux-amd64.tar.gz
+              tar -xzf helm-v3.7.0-linux-amd64.tar.gz
+              cp linux-amd64/helm /custom-tools/helm
+              chmod +x /custom-tools/helm
+          volumeMounts:
+            - name: custom-tools
+              mountPath: /custom-tools
+      containers:
+        - name: argocd-repo-server
+          volumeMounts:
+            - name: custom-tools
+              mountPath: /usr/local/bin/helm
+              subPath: helm
+      volumes:
+        - name: custom-tools
+          emptyDir: {}

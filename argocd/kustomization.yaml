@@ -1,0 +1,8 @@
+resources:
+  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+patches:
+  - path: helm-3.7-config.yaml
+    target:
+      kind: Deployment
+      name: argocd-repo-server
