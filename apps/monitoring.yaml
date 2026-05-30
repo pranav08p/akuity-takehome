@@ -14,11 +14,20 @@ spec:
       values: |
         prometheus:
           enabled: true
+          serviceMonitor:
+            selfMonitor: true
           prometheusSpec:
+            replicas: 1
             retention: 2h
-            storageSpec: {}
+            serviceMonitorSelectorNilUsesHelmValues: false
+            podMonitorSelectorNilUsesHelmValues: false
+
         alertmanager:
           enabled: false
+
+        grafana:
+          enabled: true
+
         kubeControllerManager:
           enabled: false
         kubeScheduler:
