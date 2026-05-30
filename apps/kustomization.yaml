@@ -1,0 +1,4 @@
+resources:
+  - argocd.yaml
+  - monitoring.yaml
+  - argocd-servicemonitor.yaml
