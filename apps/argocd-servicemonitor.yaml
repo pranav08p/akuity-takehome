@@ -11,7 +11,7 @@ spec:
       - argocd
   selector:
     matchLabels:
-      app.kubernetes.io/name: argocd-metrics
+      app.kubernetes.io/name: argocd-application-controller
   endpoints:
     - port: metrics
       path: /metrics
