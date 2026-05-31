@@ -573,5 +573,39 @@ This solution demonstrates:
 * Operational troubleshooting methodology
 * Understanding of Argo CD internals and GitOps workflows
 
-```
-```
+## Output Screenshots
+1. Pods health
+<img width="511" height="127" alt="Pods health" src="https://github.com/user-attachments/assets/96a11bf2-88e5-4e92-bc0f-505b06498cf2" />
+
+2. Monitor services
+<img width="442" height="184" alt="Monitor services" src="https://github.com/user-attachments/assets/5be85963-9e6e-4df2-ae55-fc366eade0a2" />
+
+3. Prometheus rules
+<img width="676" height="522" alt="Prometheus rules" src="https://github.com/user-attachments/assets/1f226ad5-d3aa-49f4-bc88-e7e99d8fb5d5" />
+
+4. Argocd version
+<img width="970" height="63" alt="Argocd version" src="https://github.com/user-attachments/assets/87c88d5b-c18c-4cf5-a7b7-1104b56149f0" />
+
+5. Sync wave
+<img width="595" height="112" alt="Sync wave" src="https://github.com/user-attachments/assets/92f99889-fcba-46a1-8841-7954d63d5ada" />
+
+6. Argo CD UI
+<img width="1452" height="693" alt="Argo CD UI" src="https://github.com/user-attachments/assets/e4a5c019-7020-4f9a-9cf6-5a049a7636fd" />
+
+7. Prometheus targets expand
+<img width="1460" height="733" alt="Prometheus targets expand" src="https://github.com/user-attachments/assets/7febbd28-68a5-49d7-b11b-fdc4cb1605de" />
+
+8. Grafana dashboards
+<img width="1470" height="810" alt="Grafana dashboards" src="https://github.com/user-attachments/assets/bf7138bb-5e27-4988-acbb-a7ab868c6b7b" />
+
+9. Prometheus targets collapse
+<img width="1460" height="812" alt="Prometheus targets collapse" src="https://github.com/user-attachments/assets/9317ce5d-d68c-489c-9296-350e3c4f4a96" />
+
+10. Grafana explore
+<img width="1466" height="807" alt="Grafana explore" src="https://github.com/user-attachments/assets/0e2b227a-23dd-42e5-9a5b-b2099bf04c32" />
+
+11. Grafana prometheus dashboard
+<img width="1464" height="787" alt="Grafana prometheus dashboard" src="https://github.com/user-attachments/assets/adad70a0-688d-4bdf-913e-e73299117d37" />
+
+12. Grafana datasource
+<img width="1466" height="818" alt="Grafana datasource" src="https://github.com/user-attachments/assets/40f50108-4b71-4ac0-ac0b-491563368031" />
